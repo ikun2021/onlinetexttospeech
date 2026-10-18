@@ -10,7 +10,8 @@ export async function POST(req: NextRequest) {
       rate = "+0%",
       volume = "+0%",
       pitch = "+0Hz",
-      outputFormat = "audio-24khz-48kbitrate-mono-mp3",
+      sampleRate = "24000",
+      outputFormat: customOutputFormat,
     } = body;
 
     if (!text || typeof text !== "string" || !text.trim()) {
@@ -27,6 +28,17 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Synthesis always returns MP3. WAV, OGG, and PCM are converted in the browser.
+    let outputFormat = customOutputFormat;
+    const contentType = "audio/mpeg";
+    const fileExtension = "mp3";
+
+    if (!outputFormat) {
+      if (sampleRate === "16000") outputFormat = "audio-16khz-32kbitrate-mono-mp3";
+      else if (sampleRate === "44100") outputFormat = "audio-24khz-96kbitrate-mono-mp3";
+      else outputFormat = "audio-24khz-48kbitrate-mono-mp3";
+    }
+
     const audioBuffer = await synthesizeSpeech({
       text,
       voice,
@@ -41,9 +53,9 @@ export async function POST(req: NextRequest) {
     return new Response(uint8Array, {
       status: 200,
       headers: {
-        "Content-Type": "audio/mpeg",
+        "Content-Type": contentType,
         "Content-Length": audioBuffer.length.toString(),
-        "Content-Disposition": `attachment; filename="synthesis-${Date.now()}.mp3"`,
+        "Content-Disposition": `attachment; filename="synthesis-${Date.now()}.${fileExtension}"`,
         "Cache-Control": "no-cache, no-store, must-revalidate",
         "X-Voice-Used": voice,
       },

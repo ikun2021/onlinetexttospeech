@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="24" fill="#F4F4F5"/>
+  <path d="M480 70l160 60v90c0 90-70 140-160 170-90-30-160-80-160-170v-90l160-60z" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="3"/>
+  <path d="M480 150v90" stroke="#18181B" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="480" cy="270" r="10" fill="#18181B"/>
+  <text x="480" y="380" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#71717A">Do not paste secrets - only text you accept transmitting</text>
+</svg>

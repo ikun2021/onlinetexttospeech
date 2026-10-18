@@ -136,7 +136,9 @@ for (const [family, locales] of Object.entries(typedVoicesData)) {
     };
 
     ALL_LOCALES.push(group);
-    LOCALE_MAP.set(localeCode, group);
+    if (!LOCALE_MAP.has(localeCode)) {
+      LOCALE_MAP.set(localeCode, group);
+    }
     LOCALE_MAP.set(localeName, group);
 
     for (const v of parsedVoices) {

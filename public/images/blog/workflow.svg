@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="24" fill="#F4F4F5"/>
+  <rect x="48" y="70" width="200" height="120" rx="16" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+  <text x="148" y="140" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#18181B">Text</text>
+  <path d="M268 130h52" stroke="#71717A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M308 122l12 8-12 8" fill="#71717A"/>
+  <rect x="340" y="70" width="200" height="120" rx="16" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+  <text x="440" y="140" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#18181B">Voice</text>
+  <path d="M560 130h52" stroke="#71717A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M600 122l12 8-12 8" fill="#71717A"/>
+  <rect x="632" y="70" width="200" height="120" rx="16" fill="#18181B"/>
+  <text x="732" y="140" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#FAFAFA">Audio</text>
+  <rect x="120" y="250" width="720" height="100" rx="16" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+  <path d="M160 300c20-40 40 40 60 0s40 40 60 0 40 40 60 0 40 40 60 0 40 40 60 0 40 40 60 0 40 40 60 0 40 40 60 0 40 40 60 0" stroke="#52525B" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="480" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#71717A">Paste - Choose voice - Generate - Preview / Download</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="24" fill="#F4F4F5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="56" y="80" width="190" height="220" rx="18" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+    <text x="151" y="150" text-anchor="middle" font-size="28" font-weight="700" fill="#18181B">PCM</text>
+    <text x="151" y="190" text-anchor="middle" font-size="14" fill="#71717A">Raw samples</text>
+    <text x="151" y="220" text-anchor="middle" font-size="14" fill="#71717A">Dev / research</text>
+    <rect x="276" y="80" width="190" height="220" rx="18" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+    <text x="371" y="150" text-anchor="middle" font-size="28" font-weight="700" fill="#18181B">WAV</text>
+    <text x="371" y="190" text-anchor="middle" font-size="14" fill="#71717A">Edit master</text>
+    <text x="371" y="220" text-anchor="middle" font-size="14" fill="#71717A">Lossless-ish</text>
+    <rect x="496" y="80" width="190" height="220" rx="18" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+    <text x="591" y="150" text-anchor="middle" font-size="28" font-weight="700" fill="#18181B">MP3</text>
+    <text x="591" y="190" text-anchor="middle" font-size="14" fill="#71717A">Share / upload</text>
+    <text x="591" y="220" text-anchor="middle" font-size="14" fill="#71717A">Compatible</text>
+    <rect x="716" y="80" width="190" height="220" rx="18" fill="#18181B"/>
+    <text x="811" y="150" text-anchor="middle" font-size="28" font-weight="700" fill="#FAFAFA">Opus</text>
+    <text x="811" y="190" text-anchor="middle" font-size="14" fill="#A1A1AA">Realtime</text>
+    <text x="811" y="220" text-anchor="middle" font-size="14" fill="#A1A1AA">Low bitrate</text>
+  </g>
+  <text x="480" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#71717A">Pick format by destination: edit, share, or stream</text>
+</svg>

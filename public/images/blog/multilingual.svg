@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="24" fill="#F4F4F5"/>
+  <rect x="80" y="90" width="240" height="160" rx="18" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+  <text x="200" y="175" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#18181B">ZH</text>
+  <text x="200" y="215" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#71717A">Segment A</text>
+  <path d="M340 170h40" stroke="#71717A" stroke-width="3"/>
+  <path d="M368 162l12 8-12 8" fill="#71717A"/>
+  <rect x="400" y="90" width="240" height="160" rx="18" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+  <text x="520" y="175" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#18181B">EN</text>
+  <text x="520" y="215" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#71717A">Segment B</text>
+  <path d="M660 170h40" stroke="#71717A" stroke-width="3"/>
+  <path d="M688 162l12 8-12 8" fill="#71717A"/>
+  <rect x="720" y="90" width="160" height="160" rx="18" fill="#18181B"/>
+  <text x="800" y="175" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#FAFAFA">Join</text>
+  <text x="800" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#A1A1AA">Timeline</text>
+  <text x="480" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#71717A">One language per clip, then stitch on the timeline</text>
+</svg>

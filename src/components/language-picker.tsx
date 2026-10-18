@@ -131,14 +131,15 @@ export function LanguagePicker({
             ) : (
               filteredLocales.map((locale) => {
                 const isSelected =
+                  locale.localeName.toLowerCase() === (selectedLocale || "").toLowerCase() ||
                   locale.localeCode.toLowerCase() === (selectedLocale || "").toLowerCase();
 
                 return (
                   <button
-                    key={`${locale.family}-${locale.localeCode}`}
+                    key={`${locale.family}-${locale.localeName}`}
                     type="button"
                     onClick={() => {
-                      onSelectLocale(locale.localeCode);
+                      onSelectLocale(locale.localeName);
                       setIsOpen(false);
                       setSearchQuery("");
                     }}

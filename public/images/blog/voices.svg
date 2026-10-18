@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="24" fill="#F4F4F5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <circle cx="240" cy="170" r="70" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+    <circle cx="240" cy="150" r="24" fill="#18181B"/>
+    <path d="M200 220c12-28 68-28 80 0" stroke="#18181B" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <text x="240" y="280" text-anchor="middle" font-size="18" fill="#18181B">Female</text>
+    <circle cx="480" cy="170" r="70" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="2"/>
+    <circle cx="480" cy="150" r="24" fill="#52525B"/>
+    <path d="M440 220c12-28 68-28 80 0" stroke="#52525B" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <text x="480" y="280" text-anchor="middle" font-size="18" fill="#18181B">Male</text>
+    <circle cx="720" cy="170" r="70" fill="#18181B"/>
+    <circle cx="720" cy="150" r="24" fill="#FAFAFA"/>
+    <path d="M680 220c12-28 68-28 80 0" stroke="#FAFAFA" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <text x="720" y="280" text-anchor="middle" font-size="18" fill="#18181B">Locale</text>
+    <text x="480" y="350" text-anchor="middle" font-size="16" fill="#71717A">Language first, then voice - stay consistent in a project</text>
+  </g>
+</svg>
