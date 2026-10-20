@@ -26,7 +26,8 @@ interface ToastMessage {
 
 const DAILY_LIMIT = 2000;
 const formatOptions = ["mp3", "wav", "ogg", "pcm"];
-const sampleRateOptions = ["16000", "22050", "24000", "44100"];
+const EDGE_SAMPLE_RATE = "24000";
+const sampleRateOptions = ["8000", "16000", "24000", "32000", "48000"];
 
 // Write string to DataView offset
 function writeString(view: DataView, offset: number, str: string) {
@@ -420,7 +421,7 @@ export function TTSFormCard() {
           volume: volumeStr,
           pitch: "+0Hz",
           format: "mp3",
-          sampleRate: state.sampleRate,
+          sampleRate: EDGE_SAMPLE_RATE,
         }),
       });
 
@@ -451,11 +452,12 @@ export function TTSFormCard() {
       const mp3Blob = await response.blob();
       const selectedFormat = state.format;
       const sampleRate = parseInt(state.sampleRate, 10) || 24000;
+      const needsConvert = selectedFormat !== "mp3" || String(sampleRate) !== EDGE_SAMPLE_RATE;
 
       let playBlob = mp3Blob;
       let downBlob = mp3Blob;
 
-      if (selectedFormat !== "mp3") {
+      if (needsConvert) {
         setIsConverting(true);
         const converted = await convertMp3ToFormat(
           mp3Blob,

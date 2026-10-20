@@ -1,6 +1,6 @@
 "use client";
 
-export type ConvertibleFormat = "wav" | "ogg" | "pcm";
+export type ConvertibleFormat = "mp3" | "wav" | "ogg" | "pcm";
 
 export class AudioConvertError extends Error {
   constructor() {
@@ -90,6 +90,7 @@ function toBlob(data: Uint8Array, type: string): Blob {
 }
 
 const MIME: Record<ConvertibleFormat, string> = {
+  mp3: "audio/mpeg",
   wav: "audio/wav",
   ogg: "audio/ogg",
   pcm: "application/octet-stream",
@@ -99,6 +100,9 @@ function buildArgs(format: ConvertibleFormat, sampleRate: number): string[] {
   const rate = String(sampleRate);
   const input = "input.mp3";
   const output = `output.${format}`;
+  if (format === "mp3") {
+    return ["-i", input, "-vn", "-ar", rate, "-ac", "1", "-c:a", "libmp3lame", "-b:a", "48k", output];
+  }
   if (format === "wav") {
     return ["-i", input, "-vn", "-ar", rate, "-ac", "1", "-c:a", "pcm_s16le", output];
   }
